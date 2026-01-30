@@ -1,0 +1,101 @@
+.admission-form {
+  max-width: 1200px;
+}
+
+.admission-form .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.admission-form .ant-form-item-label > label {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.admission-form .ant-input,
+.admission-form .ant-input-number,
+.admission-form .ant-select-selector,
+.admission-form .ant-picker {
+  border-radius: 4px;
+  border-color: var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.admission-form .ant-input:hover,
+.admission-form .ant-input-number:hover,
+.admission-form .ant-select-selector:hover,
+.admission-form .ant-picker:hover {
+  border-color: var(--primary-color);
+}
+
+.admission-form .ant-input-focused,
+.admission-form .ant-input-number-focused,
+.admission-form .ant-select-focused .ant-select-selector,
+.admission-form .ant-picker-focused .ant-picker-input {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+.admission-form .ant-btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.admission-form .ant-btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+.admission-form .ant-btn-default {
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.admission-form .ant-form-item-has-error .ant-input,
+.admission-form .ant-form-item-has-error .ant-input-number,
+.admission-form .ant-form-item-has-error .ant-select-selector,
+.admission-form .ant-form-item-has-error .ant-picker {
+  border-color: #ff4d4f !important;
+}
+
+.admission-form .ant-form-item-explain-error {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Step indicator styling */
+.ant-steps {
+  margin-bottom: 32px;
+}
+
+.ant-steps-item-process .ant-steps-item-icon {
+  background-color: var(--primary-color);
+}
+
+.ant-steps-item-finish .ant-steps-item-icon {
+  background-color: #52c41a;
+}
+
+.ant-steps-item-active {
+  color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admission-form {
+    padding: 0 8px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+}

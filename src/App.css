@@ -1,0 +1,159 @@
+/* Desktop Sidebar */
+@media (min-width: 1024px) {
+  .ant-layout-sider {
+    display: block !important;
+  }
+
+  .mobile-menu-btn {
+    display: none !important;
+  }
+
+  .desktop-title {
+    display: block !important;
+  }
+
+  .fixed-sidebar {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh !important;
+    overflow-y: auto !important;
+    z-index: 100;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+  }
+
+  .fixed-sidebar::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 1023px) {
+  .ant-layout-sider {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: block !important;
+  }
+
+  .desktop-title {
+    display: none !important;
+  }
+
+  .site-layout,
+  .site-layout.collapsed {
+    margin-left: 0 !important;
+  }
+}
+
+.site-layout {
+  margin-left: 280px;
+  transition: all 0.2s;
+}
+
+.site-layout.collapsed {
+  margin-left: 80px;
+}
+
+/* Global Ant Design Customizations */
+.ant-btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.ant-btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.ant-menu-item-selected {
+  color: var(--primary-color) !important;
+}
+
+/* Card Hover Effect */
+.ant-card {
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.ant-table {
+  font-size: 14px;
+}
+
+.ant-table-thead>tr>th {
+  background-color: #fafafa;
+  font-weight: 600;
+}
+
+/* Form Styling */
+.ant-form-item-label>label {
+  font-weight: 500;
+}
+
+/* Status Badge Colors */
+.status-pending {
+  background-color: #fff7e6;
+  color: #faad14;
+}
+
+.status-approved {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+.status-rejected {
+  background-color: #fff1f0;
+  color: #ff4d4f;
+}
+
+.status-processing {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+/* Stat Cards */
+.stat-card {
+  border-radius: 8px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 8px 0;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .ant-row {
+    gap: 16px;
+  }
+
+  .ant-col {
+    margin-bottom: 16px;
+  }
+}

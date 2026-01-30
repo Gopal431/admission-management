@@ -1,0 +1,138 @@
+.stat-card {
+  border-radius: 8px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+/* Button styling */
+.ant-btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 4px;
+  height: 40px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ant-btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+.ant-btn-primary-dangerous {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.ant-btn-primary-dangerous:hover {
+  background-color: #ff7875;
+  border-color: #ff7875;
+}
+
+/* Select dropdown */
+.ant-select-selector {
+  border-radius: 4px;
+  border-color: var(--border-color) !important;
+  transition: all 0.3s ease;
+}
+
+.ant-select-focused .ant-select-selector {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+/* DatePicker */
+.ant-picker {
+  border-radius: 4px;
+  border-color: var(--border-color) !important;
+  transition: all 0.3s ease;
+}
+
+.ant-picker-focused {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+/* Card styling */
+.ant-card {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Tabs styling */
+.ant-tabs-nav {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.ant-tabs-tab-active {
+  color: var(--primary-color) !important;
+  border-bottom-color: var(--primary-color) !important;
+}
+
+/* Tag styling */
+.ant-tag {
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
+
+/* Table styling */
+.ant-table-row:hover > td {
+  background-color: #f5f5f5;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+}
+
+/* Print styles */
+@media print {
+  .ant-btn,
+  .ant-tabs,
+  .ant-select,
+  .ant-picker {
+    display: none;
+  }
+
+  .ant-table {
+    font-size: 12px;
+  }
+
+  .ant-card {
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ant-table-cell {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .ant-btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .ant-space-item {
+    width: 100%;
+  }
+}
